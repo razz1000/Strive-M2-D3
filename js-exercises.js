@@ -30,7 +30,6 @@ for (let i = 0; i < genres.length; i++) {
 /* 
 <!-- MANDATORY JS EXERCISES (continue from yesterday's file for this exercise)
 each item from the loop every time the button gets clicked
-6) Move the inputs references in the function. Use the first input value as background-color for the item, and the second one for the text color.
 
 If you receive black as a color check where you have the inputs references.
 You should now see the list-items color and background-color change at the click of the button.
@@ -63,23 +62,33 @@ for (let i = 0; i < listItems.length; i++) {
 4) Create a function and attach it to the "Apply Colors" button click event
 */
 
-window.onload = () => { 
+/* 
+5) Cycle listItems inside the function. Verify that the function and the loop work by logging in the console 
+*/
 
-    let applyColorsClickEvent = () => {
+/* 
+6) Move the inputs references in the function. Use the first input value as background-color for the item, and the second one for the text color.
+
+ */
+
+
+
+let changeColorEvent = (event) => {
+    console.log(event.target.value)
+    let header = document.querySelector("h1")
+    header.style.backgroundColor = event.target.value
+
+}
+
+
+let applyColorsClickEvent = () => {
     let colorPickers = document.querySelectorAll("#colorpickers")
     for (let i = 0; i < colorPickers.length; i++) {
         colorPickers[i].addEventListener("click", changeColorEvent)
     }
 }
-}
+applyColorsClickEvent();
 
-/* 
-5) Cycle listItems inside the function. Verify that the function and the loop work by logging in the console 
- */
-
-let changeColorEvent = (event) => {
-    console.log(event.target)
-}
 
 
 

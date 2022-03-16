@@ -8,7 +8,8 @@ for (let i = 0; i < travel.length; i++) {
 
 
 let addSpans = () => {
-    let summerbadge = document.querySelector(".welcome-summer")
-    summerbadge.innerHTML = <span class="badge badge-pill badge-dark">new</span> 
-
+    let newSummer = []
+    for (let i = 0; i < newSummer.push(document.querySelectorAll(".welcome-summer")[i].length; i++) {
+        newSummer.push(document.querySelectorAll(".welcome-summer")[i].innerText)
+    }
 }
