@@ -1,9 +1,14 @@
-let alertMessage = document.querySelector(".alert-primary");
-let buttonPrimary = document.querySelector(".btn-primary");
 
-window.onload(
-buttonPrimary.addEventListener("click", launchAlertMessage)
-)
-let launchAlertMessage = (event) => {
-    alert("hello")
+
+let travel = document.querySelectorAll(".travel")
+for (let i = 0; i < travel.length; i++) {
+    console.log(travel[i].length)
+}
+
+
+
+let addSpans = () => {
+    let summerbadge = document.querySelector(".welcome-summer")
+    summerbadge.innerHTML = <span class="badge badge-pill badge-dark">new</span> 
+
 }

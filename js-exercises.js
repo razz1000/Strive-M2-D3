@@ -64,7 +64,8 @@ for (let i = 0; i < listItems.length; i++) {
 */
 
 window.onload = () => { 
-let applyColorsClickEvent = () => {
+
+    let applyColorsClickEvent = () => {
     let colorPickers = document.querySelectorAll("#colorpickers")
     for (let i = 0; i < colorPickers.length; i++) {
         colorPickers[i].addEventListener("click", changeColorEvent)

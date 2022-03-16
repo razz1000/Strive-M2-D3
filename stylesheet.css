@@ -1,0 +1,23 @@
+.heading {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+
+.hawaii-image {
+    background-image: url(https://media.istockphoto.com/photos/where-coconuts-grow-picture-id117211856);
+    height: 450px;
+}
+
+
+em {
+    font-family: cursive;
+}
+
+.collapsing-button {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+}
